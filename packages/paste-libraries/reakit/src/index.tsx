@@ -23,12 +23,11 @@ export {
   MenuSeparatorProps,
   // https://reakit.io/docs/popover/
   usePopoverState,
+  PopoverStateReturn,
   Popover,
   PopoverProps,
   PopoverDisclosure,
   PopoverDisclosureProps,
-  PopoverArrow,
-  PopoverArrowProps,
   // https://reakit.io/docs/tab/
   useTabState,
   TabState,
@@ -41,3 +40,5 @@ export {
   TabPanel,
   TabPanelProps,
 } from 'reakit';
+
+export {PopoverBaseArrow, PopoverBaseArrowProps} from './Popover/PopoverBaseArrow';
