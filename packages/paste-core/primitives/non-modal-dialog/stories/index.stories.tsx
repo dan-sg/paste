@@ -14,7 +14,7 @@ const Example: React.FC<{}> = () => {
     <>
       <NonModalDialogDisclosurePrimitive {...nonModalDialog}>Open non-modal dialog</NonModalDialogDisclosurePrimitive>
       <NonModalDialogPrimitive {...nonModalDialog} aria-label="Welcome">
-        <NonModalDialogArrowPrimitive {...nonModalDialog} />
+        <NonModalDialogArrowPrimitive as="div" {...nonModalDialog} />
         Welcome to Paste!
       </NonModalDialogPrimitive>
     </>
@@ -27,7 +27,7 @@ const RightPlacementExample: React.FC<{}> = () => {
     <>
       <NonModalDialogDisclosurePrimitive {...nonModalDialog}>Open non-modal dialog</NonModalDialogDisclosurePrimitive>
       <NonModalDialogPrimitive {...nonModalDialog} aria-label="Welcome">
-        <NonModalDialogArrowPrimitive {...nonModalDialog} />
+        <NonModalDialogArrowPrimitive as="div" {...nonModalDialog} />
         Welcome to Paste!
       </NonModalDialogPrimitive>
     </>
@@ -40,7 +40,7 @@ const LeftPlacementExample: React.FC<{}> = () => {
     <Absolute preset="right" top={12} right={12}>
       <NonModalDialogDisclosurePrimitive {...nonModalDialog}>Open non-modal dialog</NonModalDialogDisclosurePrimitive>
       <NonModalDialogPrimitive {...nonModalDialog} aria-label="Welcome">
-        <NonModalDialogArrowPrimitive {...nonModalDialog} />
+        <NonModalDialogArrowPrimitive as="div" {...nonModalDialog} />
         Welcome to Paste!
       </NonModalDialogPrimitive>
     </Absolute>
@@ -53,7 +53,7 @@ const TopPlacementExample: React.FC<{}> = () => {
     <Absolute preset="bottom" bottom={12}>
       <NonModalDialogDisclosurePrimitive {...nonModalDialog}>Open non-modal dialog</NonModalDialogDisclosurePrimitive>
       <NonModalDialogPrimitive {...nonModalDialog} aria-label="Welcome">
-        <NonModalDialogArrowPrimitive {...nonModalDialog} />
+        <NonModalDialogArrowPrimitive as="div" {...nonModalDialog} />
         Welcome to Paste!
       </NonModalDialogPrimitive>
     </Absolute>
@@ -66,7 +66,7 @@ const BottomPlacementExample: React.FC<{}> = () => {
     <>
       <NonModalDialogDisclosurePrimitive {...nonModalDialog}>Open non-modal dialog</NonModalDialogDisclosurePrimitive>
       <NonModalDialogPrimitive {...nonModalDialog} aria-label="Welcome">
-        <NonModalDialogArrowPrimitive {...nonModalDialog} />
+        <NonModalDialogArrowPrimitive as="div" {...nonModalDialog} />
         Welcome to Paste!
       </NonModalDialogPrimitive>
     </>
