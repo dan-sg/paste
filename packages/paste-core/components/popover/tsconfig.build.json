@@ -9,12 +9,6 @@
   ],
   "references": [
     {
-      "path": "../../layout/absolute"
-    },
-    {
-      "path": "../anchor"
-    },
-    {
       "path": "../../primitives/box"
     },
     {
@@ -27,16 +21,10 @@
       "path": "../../../paste-icons"
     },
     {
-      "path": "../../layout/media-object"
-    },
-    {
-      "path": "../../primitives/menu"
+      "path": "../../primitives/non-modal-dialog"
     },
     {
       "path": "../../../paste-libraries/reakit"
-    },
-    {
-      "path": "../separator"
     },
     {
       "path": "../spinner"
