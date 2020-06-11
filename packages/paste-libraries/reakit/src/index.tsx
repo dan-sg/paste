@@ -1,3 +1,5 @@
+import {PopoverArrow, PopoverArrowProps} from './Popover/PopoverArrow';
+
 export {
   // https://reakit.io/docs/disclosure/
   useDisclosureState,
@@ -41,4 +43,4 @@ export {
   TabPanelProps,
 } from 'reakit';
 
-export * from './Popover/PopoverArrow';
+export {PopoverArrow, PopoverArrowProps};
