@@ -101,20 +101,41 @@ const LeftExample: React.FC<{}> = () => {
   );
 };
 
+const NoGutterExample: React.FC<{}> = () => {
+  const popover = usePopoverState({placement: 'bottom-start', gutter: 0});
+  return (
+    <>
+      <PopoverButton {...popover} variant="primary">
+        Open popover
+      </PopoverButton>
+      <Popover {...popover} tabIndex={0} aria-label="Popover">
+        <Box padding="space40">
+          <Text as="span" fontSize="fontSize20" lineHeight="lineHeight20">
+            This is the Twilio styled popover that you can use in all your applications.
+          </Text>
+        </Box>
+      </Popover>
+    </>
+  );
+};
+
 storiesOf('Components|Popover', module)
   .addDecorator(withKnobs)
   .add('Default', () => {
     return <Example />;
   })
-  .add('Top Popover', () => {
+  .add('Popover Top', () => {
     return <TopExample />;
   })
-  .add('Left Popover', () => {
+  .add('Popover Left', () => {
     return <LeftExample />;
   })
-  .add('Right Popover', () => {
+  .add('Popover Right', () => {
     return <RightExample />;
   })
-  .add('Bottom Popover', () => {
+  .add('Popover Bottom', () => {
     return <BottomExample />;
+  })
+  .add('Popover Without Gutter', () => {
+    return <NoGutterExample />;
   });

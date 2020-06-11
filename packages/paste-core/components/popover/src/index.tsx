@@ -48,9 +48,7 @@ const PopoverArrow = React.forwardRef<HTMLDivElement, PopoverArrowProps>((props,
   return (
     <NonModalDialogArrowPrimitive
       {...props}
-      as="div"
-      // @ts-ignore
-      size="1.5rem"
+      size={theme.fontSizes.fontSize70}
       stroke={theme.borderColors.colorBorderLight}
       fill={theme.backgroundColors.colorBackgroundBody}
       ref={ref}
