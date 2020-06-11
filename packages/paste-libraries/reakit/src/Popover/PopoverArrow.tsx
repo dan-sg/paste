@@ -20,11 +20,10 @@ export type PopoverArrowHTMLProps = BoxHTMLProps & {
   stroke?: string;
 };
 
-export type PopoverBaseArrowProps = PopoverArrowOptions & PopoverArrowHTMLProps;
+export type PopoverArrowProps = PopoverArrowOptions & PopoverArrowHTMLProps;
 
-const usePopoverArrow = createHook<PopoverArrowOptions, PopoverArrowHTMLProps>({
+export const usePopoverArrow = createHook<PopoverArrowOptions, PopoverArrowHTMLProps>({
   name: 'PopoverArrow',
-  // @ts-ignore
   compose: useBox,
   useState: usePopoverState,
   keys: ['size'],
@@ -74,14 +73,12 @@ const usePopoverArrow = createHook<PopoverArrowOptions, PopoverArrowHTMLProps>({
         ...htmlStyle,
       },
       children,
-      fill,
-      stroke,
       ...htmlProps,
     };
   },
 });
 
-export const PopoverBaseArrow = createComponent({
+export const PopoverArrow = createComponent({
   as: 'div',
   memo: true,
   useHook: usePopoverArrow,

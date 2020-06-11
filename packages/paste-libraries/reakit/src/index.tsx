@@ -41,4 +41,4 @@ export {
   TabPanelProps,
 } from 'reakit';
 
-export {PopoverBaseArrow, PopoverBaseArrowProps} from './Popover/PopoverBaseArrow';
+export * from './Popover/PopoverArrow';
