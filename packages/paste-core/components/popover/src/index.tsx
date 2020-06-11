@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 import {Box, BoxProps, safelySpreadBoxProps} from '@twilio-paste/box';
 import {Button, ButtonProps} from '@twilio-paste/button';
 import {
@@ -39,6 +40,13 @@ const StyledPopover = React.forwardRef<HTMLDivElement, BoxProps>(({style, ...pro
 const Popover = React.forwardRef<HTMLDivElement, PopoverProps>((props, ref) => {
   return <NonModalDialogPrimitive {...props} as={StyledPopover} ref={ref} />;
 });
+
+if (process.env.NODE_ENV === 'development') {
+  Popover.propTypes = {
+    'aria-label': PropTypes.string.isRequired,
+  };
+}
+
 Popover.displayName = 'Popover';
 export {Popover};
 
