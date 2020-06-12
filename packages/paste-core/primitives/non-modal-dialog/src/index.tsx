@@ -1,5 +1,7 @@
 export {
   usePopoverState as useNonModalDialogPrimitiveState,
+  PopoverState as NonModalDialogPrimitiveState,
+  PopoverInitialState as NonModalDialogPrimitivePopoverInitialState,
   Popover as NonModalDialogPrimitive,
   PopoverProps as NonModalDialogPrimitiveProps,
   PopoverDisclosure as NonModalDialogDisclosurePrimitive,
