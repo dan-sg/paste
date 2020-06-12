@@ -25,7 +25,9 @@ export {
   MenuSeparatorProps,
   // https://reakit.io/docs/popover/
   usePopoverState,
+  PopoverState,
   PopoverStateReturn,
+  PopoverInitialState,
   Popover,
   PopoverProps,
   PopoverDisclosure,
