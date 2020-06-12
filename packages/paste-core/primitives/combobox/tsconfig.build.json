@@ -10,6 +10,9 @@
   "references": [
     {
       "path": "../../../paste-libraries/dropdown"
+    },
+    {
+      "path": "../../../paste-libraries/styling"
     }
   ]
 }

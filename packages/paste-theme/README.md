@@ -25,8 +25,7 @@ By using the `Theme.Provider`, when you create a custom component using Emotion 
 This is the preferred method.
 
 ```js
-import styled from '@emotion/styled';
-import {themeGet} from '@styled-system/theme-get';
+import {styled, themeGet} from '@twilio-paste/styling-library';
 
 const custom = styled.div`
   background-color: ${themeGet('backgrounds.primary')};

@@ -92,8 +92,7 @@ By using `Theme.Provider` while creating a custom component using Emotion CSS, t
 For example:
 
 ```js
-import styled from '@emotion/styled';
-import {themeGet} from '@styled-system/theme-get';
+import {styled, themeGet} from '@twilio-paste/styling-library';
 
 const custom = styled.div`
   background-color: ${themeGet('backgrounds.primary')};

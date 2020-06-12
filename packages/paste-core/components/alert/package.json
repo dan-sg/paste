@@ -28,10 +28,7 @@
     "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
-    "@emotion/core": "^10.0.10",
-    "@emotion/styled": "^10.0.14",
-    "@styled-system/css": "^5.1.5",
-    "@styled-system/theme-get": "^5.1.2",
+    "@twilio-paste/styling-library": "^0.0.0",
     "@twilio-paste/absolute": "^2.0.41",
     "@twilio-paste/box": "^2.4.9",
     "@twilio-paste/button": "^1.2.5",
@@ -45,8 +42,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-uid": "^2.2.0",
-    "styled-system": "^5.1.2"
+    "react-uid": "^2.2.0"
   },
   "devDependencies": {
     "@twilio-paste/absolute": "^2.0.41",
@@ -57,6 +53,7 @@
     "@twilio-paste/media-object": "^1.2.28",
     "@twilio-paste/spinner": "^1.2.12",
     "@twilio-paste/style-props": "^1.2.0",
+    "@twilio-paste/styling-library": "^0.0.0",
     "@twilio-paste/theme": "^3.2.1",
     "@twilio-paste/types": "^3.0.8"
   }

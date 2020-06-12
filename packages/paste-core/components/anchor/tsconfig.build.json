@@ -9,6 +9,9 @@
   ],
   "references": [
     {
+      "path": "../../../paste-libraries/styling"
+    },
+    {
       "path": "../../../paste-design-tokens"
     },
     {
