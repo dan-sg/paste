@@ -59,6 +59,9 @@ const Popover = React.forwardRef<HTMLDivElement, PopoverProps>(({children, ...pr
               variant="reset"
               size="reset"
               // @ts-ignore
+              // Property 'hide' does not exist on type 'Partial<PopoverState>'
+              // But reakit docs suggest using it
+              // https://reakit.io/docs/popover/#initial-focus
               onClick={popover.hide}
             >
               <CloseIcon decorative={false} iconColor="colorTextWeak" size="sizeIcon10" title="Close popover" />
