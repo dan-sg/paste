@@ -2,34 +2,30 @@ import * as React from 'react';
 import {axe} from 'jest-axe';
 import {render, screen} from '@testing-library/react';
 import {Theme} from '@twilio-paste/theme';
-import {usePopoverState, Popover, PopoverArrow, PopoverButton} from '../src';
+import {PopoverContainer, Popover, PopoverButton} from '../src';
 
 const PopoverMock: React.FC<{}> = () => {
-  const popover = usePopoverState({baseId: 'popover-example'});
   return (
     <Theme.Provider theme="console">
-      <PopoverButton {...popover} variant="primary">
-        Open popover
-      </PopoverButton>
-      <Popover {...popover} tabIndex={0} aria-label="Popover">
-        <PopoverArrow {...popover} />
-        This is the Twilio styled popover that you can use in all your applications.
-      </Popover>
+      <PopoverContainer baseId="popover-example">
+        <PopoverButton variant="primary">Open popover</PopoverButton>
+        <Popover tabIndex={0} aria-label="Popover">
+          This is the Twilio styled popover that you can use in all your applications.
+        </Popover>
+      </PopoverContainer>
     </Theme.Provider>
   );
 };
 
 const VisiblePopoverMock: React.FC<{}> = () => {
-  const popover = usePopoverState({baseId: 'popover-example', visible: true});
   return (
     <Theme.Provider theme="console">
-      <PopoverButton {...popover} variant="primary">
-        Open popover
-      </PopoverButton>
-      <Popover {...popover} tabIndex={0} aria-label="Popover">
-        <PopoverArrow {...popover} />
-        This is the Twilio styled popover that you can use in all your applications.
-      </Popover>
+      <PopoverContainer baseId="popover-example" visible>
+        <PopoverButton variant="primary">Open popover</PopoverButton>
+        <Popover tabIndex={0} aria-label="Popover">
+          This is the Twilio styled popover that you can use in all your applications.
+        </Popover>
+      </PopoverContainer>
     </Theme.Provider>
   );
 };
