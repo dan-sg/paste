@@ -9,6 +9,9 @@
   ],
   "references": [
     {
+      "path": "../../layout/absolute"
+    },
+    {
       "path": "../../primitives/box"
     },
     {

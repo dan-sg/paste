@@ -7,7 +7,7 @@ import {useTheme} from '@twilio-paste/theme';
 
 export type PopoverArrowProps = NonModalDialogArrowPrimitiveProps;
 
-const PopoverArrow = React.forwardRef<HTMLDivElement, PopoverArrowProps>((props, ref) => {
+const PopoverArrow: React.FC<PopoverArrowProps> = props => {
   const theme = useTheme();
 
   return (
@@ -16,9 +16,9 @@ const PopoverArrow = React.forwardRef<HTMLDivElement, PopoverArrowProps>((props,
       size={theme.fontSizes.fontSize70}
       stroke={theme.borderColors.colorBorderLight}
       fill={theme.backgroundColors.colorBackgroundBody}
-      ref={ref}
     />
   );
-});
+};
+
 PopoverArrow.displayName = 'PopoverArrow';
 export {PopoverArrow};

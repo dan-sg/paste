@@ -8,10 +8,9 @@ import {PopoverContext} from './PopoverContext';
 export type PopoverContainerProps = NonModalDialogPrimitivePopoverInitialState;
 
 const PopoverContainer: React.FC<PopoverContainerProps> = ({children, placement, gutter, ...initialState}) => {
-  const popover = useNonModalDialogPrimitiveState({placement, gutter, ...initialState});
+  const popover = useNonModalDialogPrimitiveState({placement, gutter, modal: true, ...initialState});
   const value = React.useMemo(() => popover, Object.values(popover));
-  const returnValue = <PopoverContext.Provider value={value}>{children}</PopoverContext.Provider>;
-  return returnValue;
+  return <PopoverContext.Provider value={value}>{children}</PopoverContext.Provider>;
 };
 
 PopoverContainer.displayName = 'PopoverContainer';
